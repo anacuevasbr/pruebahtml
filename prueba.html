@@ -2,20 +2,101 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    * {
+      box-sizing: border-box
+    }
+    .menu {
+      float:left;
+      width:20%;
+    }
+
+    .menuitem {
+      padding: 9px;
+      margin-top: 7px;
+      border-bottom: 2px solid #6A5ACD;
+    }
+
+    .main {
+      float:left;
+      width:80%;
+      padding: 0 10px;
+    }
+    h1 {
+      margin: 30px;
+      text-align:center;
+    }
+    h2 {
+      margin: 30px;
+    }
+    p {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      margin: 30px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 50%;
+    }
+
+    td, th {
+      border: 2px solid #6A5ACD;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      backgound-color: #dddddd;
+    }
+
+    tr:nth-child(uneven) {
+      background-color: #E0FFFF;
+    }
+
+    .titulo {
+      background-color: MediumBlue;
+      color: white;
+      padding: 8px;
+    }
+
+    footer {
+      padding: lem;
+      color: white;
+      text-align: center;
+    }
+    </style>
     <title></title>
   </head>
   <body style="background-color:#008B8B">
-    <h1>Curriculum Vitae</h1>
-    <h2>Datos personales</h2>
+    <h1><ins>Curriculum Vitae</ins></h1>
+    <div class="menu">
+    <h2 class="titulo">Datos personales</h2>
       <p><span style="font-weight:bold">Nombre:</span> Ana Cuevas</p>
       <p><span style="font-weight:bold;color:#9400D3">Edad:</span> 21</p>
-    <div style="color:#9400D3">
-      <h2>Estudios</h2>
-        <p>Nivel C1 de inglés</p>
-        <h2>Programacion</h2>
-          <p>visita mi <a href="https://github.com/anacuevasbr">Github</a></p>
     </div>
-    <img src="https://78.media.tumblr.com/e7352fda1387a9f4a6e71d8c3cc95314/tumblr_p31s5eKEgx1vcxeibo2_1280.jpg" width="400"/>
+    <div class="main">
+      <div style="color:#9400D3">
+        <h2>Estudios</h2>
+          <p>Nivel C1 de inglés</p>
+          <p style="font-size: 30px;color:GoldenRod"><ins>400</ins> capítulos de one piece</p>
+          <h2 class="titulo">Programacion</h2>
+            <p>visita mi <a href="https://github.com/anacuevasbr">Github</a></p>
+      </div>
+      <div style="margin: 30px">
+        <img src="https://78.media.tumblr.com/e7352fda1387a9f4a6e71d8c3cc95314/tumblr_p31s5eKEgx1vcxeibo2_1280.jpg" width="400" />
+      </div>
+      <div style="margin: 30px">
+        <table>
+          <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+          </tr>
+          <tr>
+            <th>Ana</th>
+            <th>21</th>
+        </table>
+      </div>
+    </div>
+    <footer> Ana Cuevas</footer>
 
   </body>
 </html>
